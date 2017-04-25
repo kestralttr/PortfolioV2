@@ -1,5 +1,5 @@
 body {
- background-color: Transparent;
+ background-color: black;
 }
 
 #intro {
@@ -110,15 +110,11 @@ body {
 
 .project-item-left {
   position: relative;
-  margin-bottom: 10px;
+  margin-top: 10px;
   height: 300px;
   width: 100%;
   background-color: grey;
   overflow: hidden;
-}
-
-.project-item-left:last-child {
-  margin-bottom: 0px;
 }
 
 .project-item-left .project-image {
@@ -149,15 +145,11 @@ body {
 
 .project-item-right {
   position: relative;
-  margin-bottom: 10px;
+  margin-top: 10px;
   height: 300px;
   width: 100%;
   background-color: grey;
   overflow: hidden;
-}
-
-.project-item-right:last-child {
-  margin-bottom: 0px;
 }
 
 .project-item-right .project-image {
@@ -183,13 +175,13 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  text-align: left;
+  text-align: right;
 }
 
 #projects ul li {
   padding-left: 5px;
   padding-right: 5px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 #projects .project-title {
