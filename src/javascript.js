@@ -20,7 +20,7 @@ let activateGlitch = function(element,pos,scale) {
 let descriptions = [
   "Software Engineer",
   "Frontend Fanatic",
-  "UI Savant",
+  "UI Connoisseur",
   "JavaScript Expert",
   "React Aficionado",
   "Rails Adept"
