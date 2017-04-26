@@ -162,8 +162,10 @@ body {
 }
 
 .project-item-left ul {
-  position: relative;
+  position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: left;
 }
@@ -238,7 +240,7 @@ body {
     background-color: #280028;
 }*/
 
-@media (max-width:799px) {
+/*@media (max-width:799px) {
   .project-item-left .project-text {
     font-size:0.7em;
   }
@@ -254,9 +256,9 @@ body {
   #projects .project-description {
     font-size:1.5em;
   }
-}
+}*/
 
-@media (max-width:649px) {
+@media (max-width:799px) {
   .project-item-left {
     height:auto;
   }
