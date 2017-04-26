@@ -3,15 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Open+Sans:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Open+Sans:400,400i,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
     <script src="src/glitch.jquery.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/master.css">
-    <title>Alex Bennett - software engineer</title>
+    <title>Alex Bennett - Software Engineer</title>
   </head>
   <body>
+
+    <section id="nav-bar">
+      <div id="title">
+        Alex Bennett - Software Engineer
+      </div>
+
+      <div id="nav-button-container">
+        <li class="nav-button" onClick="scrollToIntro()">Intro</li>
+        <li class="nav-button" onClick="scrollToProjects()">Projects</li>
+        <li class="nav-button" onClick="scrollToExperience()">Experience</li>
+      </div>
+    </section>
 
     <section id="intro">
       <h1>Alex Bennett</h1>
@@ -144,6 +156,7 @@
       <div class="experience-item">
         <h3 class="experience-position">Co-Founding Partner & Web Developer</h3>
         <a href="http://stinkycandlecompany.com/" target="_blank"><span class="experience-company">The Stinky Candle Company<span></a>
+        <p class="time-frame">September 2013 - Present</p>
         <ul>
           <li>Maintained and developed new solutions for a thriving e-commerce website.</li>
           <li>Collaborated on company launch that resulted in international attention with articles from
@@ -155,6 +168,7 @@
       <div class="experience-item">
         <h3 class="experience-position">Assistant Account Executive on Nintendo Team</h3>
         <a href="http://leoburnett.com/" target="_blank"><span class="experience-company">Leo Burnett<span></a>
+        <p class="time-frame">August 2014 - July 2016</p>
         <ul>
           <li>Launched Nintendo's new IP: <a href="https://www.youtube.com/watch?v=iwERpeBVJa8" target+"_blank">Splatoon</a>, which exceeded client sales goals by 10%.</li>
           <li>Led management of 15+ advertising campaigns, all of which were finished on schedule.</li>
@@ -165,6 +179,7 @@
       <div class="experience-item">
         <h3 class="experience-position">Head Video Editor</h3>
         <a href="http://www.byutv.org/shows?category=byu_sports" target="_blank"><span class="experience-company">BYUtv Sports<span></a>
+        <p class="time-frame">April 2012 - April 2014</p>
         <ul>
           <li>Managed a team of 6 editors, responsible for all video content for a weekly TV show.</li>
           <li>Led a training program that doubled team efficiency within 6 weeks, with all personnel showing consistent improvement.</li>

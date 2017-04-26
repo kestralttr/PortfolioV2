@@ -45,3 +45,22 @@ setInterval(function() {
   activateGlitch(description,20,2);
   description.innerHTML = descriptions[dIdx];
 },5000);
+
+
+let scrollToIntro = function() {
+  $('html, body').animate({
+      scrollTop: parseInt($("#intro").offset().top - 50)
+  }, 1000);
+};
+
+let scrollToProjects = function() {
+  $('html, body').animate({
+      scrollTop: parseInt($("#projects").offset().top - 50)
+  }, 1000);
+};
+
+let scrollToExperience = function() {
+  $('html, body').animate({
+      scrollTop: parseInt($("#experience").offset().top - 50)
+  }, 1000);
+};
