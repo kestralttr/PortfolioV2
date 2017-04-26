@@ -18,13 +18,13 @@
       <h2>Software Engineer</h2>
       <div id="icon-container"><span>R</span><span>L</span><span>G</span><span>M</span></div>
       <div id="skills-list">
-        <div class="skill-item" id="javascript">Javascript</div>
+        <div class="skill-item" id="javascript">JavaScript</div>
         <div class="skill-item" id="ruby-on-rails">Ruby on Rails</div>
         <div class="skill-item" id="HTML5">HTML5</div>
         <div class="skill-item" id="CSS3">CSS3</div>
         <div class="skill-item" id="ReactJS">ReactJS</div>
         <div class="skill-item" id="SQL">SQL</div>
-        <div class="skill-item" id="d3">d3</div>
+        <div class="skill-item" id="d3">d3.js</div>
         <div class="skill-item" id="Rspec">Rspec</div>
         <div class="skill-item" id="jQuery">jQuery</div>
       </div>
@@ -32,13 +32,13 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="project-spacer"></div>
 
       <div class="project-item-left">
         <a href="http://www.project.alexbennettstatus.com/#/" target="_blank"><div class="project-image" style="background-image: url('images/thumbnails/overlay1.png'), url('images/thumbnails/status1.jpg')"></div></a>
         <div class="project-text">
           <ul>
             <li class="project-title">Status</li>
+            <li class="project-tech">React &#8226; Rails &#8226; PostgreSQL</li>
             <li class="project-description">An original full-stack application that tracks approval status of advertising campaigns.</li>
             <li>Features variable access to projects based on SQL join tables and BCrypt authentication.</li>
             <li>Allows rendering of 5 consecutive nested objects automatically within a single component via chained AJAX requests.</li>
@@ -47,13 +47,71 @@
         </div>
       </div>
 
-      <div class="project-spacer"></div>
 
-      <div class="project-item-right">
+      <div class="project-item-left">
+        <a href="https://alexbennettstorytime.herokuapp.com/#/" target="_blank"><div class="project-image" style="background-image: url('images/thumbnails/overlay1.png'), url('images/thumbnails/storytime1.jpg')"></div></a>
+        <div class="project-text">
+          <ul>
+            <li class="project-title">Storytime</li>
+            <li class="project-tech">React &#8226; Rails &#8226; PostgreSQL</li>
+            <li class="project-description">An original full-stack project that allows for community collaboration on short stories.</li>
+            <li>Tracks and limits user interaction by setting and reading cookies.</li>
+            <li>Generates text-to-speech audio via ResponsiveVoice library.</li>
+            <li>Randomizes the background image on splash page.</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="project-item-left">
+        <a href="https://starwarsstarships.herokuapp.com/#/" target="_blank"><div class="project-image" style="background-image: url('images/thumbnails/overlay1.png'), url('images/thumbnails/starships1.jpg')"></div></a>
+        <div class="project-text">
+          <ul>
+            <li class="project-title">Star Wars Starships</li>
+            <li class="project-tech">React &#8226; Rails &#8226; SVG</li>
+            <li class="project-description">A recreation of a datapad from the Star Wars universe.</li>
+            <li>Animates SVG elements with parameters received via AJAX requests to external API.</li>
+            <li>Mimics CRT scan lines through positioning and z-index settings.</li>
+            <li>Features original style assets and emulates visual click of the Home button via CSS3 active selector.</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="project-item-left">
+        <a href="https://kestralttr.github.io/F1_d3/" target="_blank"><div class="project-image" style="background-image: url('images/thumbnails/overlay1.png'), url('images/thumbnails/f_one1.jpg')"></div></a>
+        <div class="project-text">
+          <ul>
+            <li class="project-title">Formula One Statistics</li>
+            <li class="project-tech">JavaScript &#8226; d3.js &#8226; SVG</li>
+            <li class="project-description">A sampling of visualized data from the Formula One franchise.</li>
+            <li>Emulates a speedometer-shaped chart with d3.js and basic trigonometry.</li>
+            <li>Overlays a SVG path of negative space on top of colored elements to create a image-based chart.</li>
+            <li>Employs Javascript animation to represent accurate time increments.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-item-left">
+        <a href="https://kestralttr.github.io/MartianAttack/" target="_blank"><div class="project-image" style="background-image: url('images/thumbnails/overlay1.png'), url('images/thumbnails/martian1.jpg')"></div></a>
+        <div class="project-text">
+          <ul>
+            <li class="project-title">Martian Attack</li>
+            <li class="project-tech">JavaScript &#8226; LeafletJS</li>
+            <li class="project-description">A strategy-based game built on a Javascript mapping library.</li>
+            <li>Generates a custom, zoomable map via LeafletJS.</li>
+            <li>Computes distance between markers and uses a simple AI to reduce it.</li>
+            <li>Uses game logic fundamentals to monitor and manipulate UI state.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-item-left">
         <a href="https://kestralttr.github.io/jounce/" target="_blank"><div class="project-image" style="background-image: url('images/thumbnails/overlay1.png'), url('images/thumbnails/jounce1.jpg')"></div></a>
         <div class="project-text">
           <ul>
             <li class="project-title">Jounce</li>
+            <li class="project-tech">JavaScript &#8226; HTML5 Canvas &#8226; CSS3</li>
             <li class="project-description">A Tron-inspired arcade game.</li>
             <li>Utilizes HTML5 Canvas to simulate an infinitely scrolling background.</li>
             <li>Incorporates dynamic CSS3 styling to emulate a 1980s arcade machine.</li>
@@ -62,13 +120,14 @@
         </div>
       </div>
 
-      <div class="project-spacer"></div>
+
 
       <div class="project-item-left">
         <a href="https://chrome.google.com/webstore/detail/fleedom/gobjnmclcpnlhbjajebocchfmiooecbj" target="_blank"><div class="project-image" style="background-image: url('images/thumbnails/overlay1.png'), url('images/thumbnails/fleedom1.jpg')"></div></a>
         <div class="project-text">
           <ul>
             <li class="project-title">Fleedom</li>
+            <li class="project-tech">JavaScript &#8226; Chrome</li>
             <li class="project-description">A Chrome Extension that creates computer-based distractions to help extinguish annoying conversations.</li>
             <li>Enables text message sending via the Textbelt API.</li>
             <li>Communicates with 3 Chrome APIs to store data, display notifications, and modify CSS.</li>
@@ -77,22 +136,6 @@
         </div>
       </div>
 
-      <div class="project-spacer"></div>
-
-      <div class="project-item-right">
-        <a href="https://starwarsstarships.herokuapp.com/#/" target="_blank"><div class="project-image" style="background-image: url('images/thumbnails/overlay1.png'), url('images/thumbnails/starships1.jpg')"></div></a>
-        <div class="project-text">
-          <ul>
-            <li class="project-title">Star Wars Starships</li>
-            <li class="project-description">A recreation of a datapad from the Star Wars Universe.</li>
-            <li>Animates SVG elements with parameters received via AJAX requests to external API.</li>
-            <li>Mimics CRT scan lines through positioning and z-index settings.</li>
-            <li>Features original style assets and emulates visual click of the Home button via CSS3 active selector.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="project-spacer"></div>
 
     </section>
 

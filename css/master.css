@@ -47,7 +47,7 @@ body {
 
 #skills-list #ruby-on-rails {
   position: absolute;
-  bottom:37%;
+  bottom:32%;
   right: 40%;
   color: grey;
 }
@@ -136,7 +136,9 @@ body {
   height: 300px;
   width: 100%;
   overflow: hidden;
-  background-color: #280028;
+  background-color: #440044;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .project-item-left .project-image {
@@ -145,7 +147,7 @@ body {
   top:0;
   width:400px;
   height: 300px;
-  box-shadow: 5px 0px 5px black;
+  box-shadow: 1px 0 1px black;
 }
 
 .project-item-left .project-text {
@@ -171,7 +173,7 @@ body {
   height: 300px;
   width: 100%;
   overflow: hidden;
-  background-color: #440044;
+  /*background-color: #440044;*/
 }
 
 .project-item-right .project-image {
@@ -220,7 +222,21 @@ body {
   font-style: italic;
 }
 
+#projects .project-tech {
+  font-size: 12px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  font-style: italic;
+}
 
+/*.project-item-left:nth-of-type(even) {
+  background-color: #280028;
+}*/
+
+/*.project-item-left:nth-of-type(odd) {
+
+    background-color: #280028;
+}*/
 
 @media (max-width:799px) {
   .project-item-left .project-text {
@@ -251,6 +267,7 @@ body {
     width:70vw;
     height:52.5vw;
     background-position: top left;
+    box-shadow: 0px 0px 3px black;
   }
   .project-item-left .project-text {
     position: static;
@@ -266,6 +283,7 @@ body {
     width:70vw;
     height:52.5vw;
     background-position: top left;
+    box-shadow: 0px 0px 10px black;
   }
   .project-item-right .project-text {
     position: static;
@@ -290,9 +308,6 @@ body {
 }
 
 @media (max-width:500px) {
-  .project-item-left {
-    height:500px;
-  }
   .project-item-right .project-text {
     top:280px;
     left:0;
@@ -304,17 +319,9 @@ body {
 
 @media (max-width:400px) {
   .project-item-left .project-text {
-    top:300px;
-    left:0;
-    right:0;
-    bottom:0;
     font-size:0.7em;
   }
   .project-item-right .project-text {
-    top:300px;
-    left:0;
-    right:0;
-    bottom:0;
     font-size:0.7em;
   }
   .project-item-right ul {

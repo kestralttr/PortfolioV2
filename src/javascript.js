@@ -1,28 +1,47 @@
 
-let activateGlitch = function(element) {
+let activateGlitch = function(element,pos,scale) {
   	let el = element;
     // el.style.color = "red";
-    let x = Math.floor(Math.random() * 50);
-    x = x - 25;
-    let y = Math.floor(Math.random() * 50);
-    y = y - 25;
-    let scaleX = +(Math.random() * 3).toFixed(2);
-    scaleX = scaleX - 1.5;
-    let scaleY = +(Math.random() * 3).toFixed(2);
-    scaleY = scaleY - 1.5;
-    let ms = Math.floor(Math.random() * 750);
+    let x = Math.floor(Math.random() * pos);
+    x = x - (pos/2);
+    let y = Math.floor(Math.random() * pos);
+    y = y - (pos/2);
+    let scaleX = +(Math.random() * scale).toFixed(2);
+    scaleX = scaleX - (scale/2);
+    let scaleY = +(Math.random() * scale).toFixed(2);
+    scaleY = scaleY - (scale/2);
+    let ms = Math.floor(Math.random() * 300) + 200;
     el.style.transform = "translate(" + x + "px," + y + "px) " + "scale(" + scaleX + "," + scaleY + ")";
     setTimeout(function() {
     	el.style.transform = "none";
     },ms);
 };
 
+let descriptions = [
+  "Software Engineer",
+  "Frontend Fanatic",
+  "UI Savant",
+  "JavaScript Expert",
+  "React Aficionado",
+  "Rails Adept"
+];
+
+let description = document.querySelector("#intro h2");
+let dIdx = 0;
+
 setInterval(function() {
   let skillItems = document.getElementsByClassName("skill-item");
   Array.prototype.forEach.call(skillItems,function(el) {
-    let randomizer = Math.round(Math.random() * 2);
-    if(randomizer === 0) {
-      activateGlitch(el);
+    let randomizer = Math.round(Math.random() * 3);
+    if(randomizer < 2) {
+      activateGlitch(el,50,3);
     }
   });
-},3000);
+  if(dIdx === descriptions.length - 1) {
+    dIdx = 0;
+  } else {
+    dIdx++;
+  }
+  activateGlitch(description,20,2);
+  description.innerHTML = descriptions[dIdx];
+},5000);
