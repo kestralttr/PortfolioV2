@@ -212,7 +212,8 @@ body {
   height: 300px;
   width: 100%;
   overflow: hidden;
-  background-color: #440044;
+  /*background-color: #440044;*/
+  background-color: #280028;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
@@ -456,8 +457,9 @@ body {
   height:50px;
   background-color: #1e1e1e;
   box-shadow:0px -2px 2px #1e1e1e;
-  color: #EBC702;
-  font-family: 'Dosis', sans-serif;
+  color: #919191;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #footer #attribution {
