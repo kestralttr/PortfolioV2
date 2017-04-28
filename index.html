@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Open+Sans:400,400i,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
-    <script src="src/glitch.jquery.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/master.css">
     <title>Alex Bennett - Software Engineer</title>
@@ -28,7 +28,8 @@
     <section id="intro">
       <h1>Alex Bennett</h1>
       <h2>Software Engineer</h2>
-      <div id="icon-container"><span>R</span><span>L</span><span>G</span><span>M</span></div>
+      <!-- <div id="icon-container"><span>R</span><span>L</span><span>G</span><span>M</span></div> -->
+      <div id="email"><span>kestralttr@gmail.com</span></div>
       <div id="skills-list">
         <div class="skill-item" id="javascript">JavaScript</div>
         <div class="skill-item" id="ruby-on-rails">Ruby on Rails</div>
@@ -123,7 +124,7 @@
         <div class="project-text">
           <ul>
             <li class="project-title">Jounce</li>
-            <li class="project-tech">JavaScript &#8226; HTML5 Canvas &#8226; CSS3</li>
+            <li class="project-tech">JavaScript &#8226; Canvas &#8226; CSS3</li>
             <li class="project-description">A Tron-inspired arcade game.</li>
             <li>Utilizes HTML5 Canvas to simulate an infinitely scrolling background.</li>
             <li>Incorporates dynamic CSS3 styling to emulate a 1980s arcade machine.</li>
@@ -131,8 +132,6 @@
           </ul>
         </div>
       </div>
-
-
 
       <div class="project-item-left">
         <a href="https://chrome.google.com/webstore/detail/fleedom/gobjnmclcpnlhbjajebocchfmiooecbj" target="_blank"><div class="project-image" style="background-image: url('images/thumbnails/overlay1.png'), url('images/thumbnails/fleedom1.jpg')"></div></a>
@@ -187,6 +186,49 @@
         </ul>
       </div>
 
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div id="contact-container">
+        <div id="picture-section">
+          <img id="picture" src="images/face2.jpg"/>
+        </div>
+        <div id="text-section">
+
+          <p>
+            Hey there.
+          </p>
+
+          <p>
+            I'm a San-Francisco-based software engineer who lives, breathes, and occasionally finds himself drowning in web development.
+          </p>
+
+          <p>
+            If that's what you're into, let's chat.
+          </p>
+
+          <div id="icon-box">
+            <a href='pdf/alexbennett.pdf' download><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+            <a href='https://github.com/kestralttr/' target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href='https://www.linkedin.com/in/kestralttr/' target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href='mailto:kestralttr@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            <a onclick="showPhoneNumber()"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div id="phone-number-blackout" onclick="hidePhoneNumber()">
+          <div id="phone-number-background">
+            <p class="text">
+              Phone Number
+            </p>
+            <p class="number">
+              630-805-3330
+            </p>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <section id="footer">

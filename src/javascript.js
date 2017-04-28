@@ -64,3 +64,16 @@ let scrollToExperience = function() {
       scrollTop: parseInt($("#experience").offset().top - 50)
   }, 1000);
 };
+
+
+let hidePhoneNumber = function() {
+  $("#phone-number-blackout").fadeTo(300,0);
+  setTimeout(function() {
+    $("#phone-number-blackout").css("display","none");
+  },300);
+};
+
+let showPhoneNumber = function() {
+  $("#phone-number-blackout").css("display","block");
+  $("#phone-number-blackout").fadeTo(300,1);
+};
