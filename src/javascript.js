@@ -65,6 +65,11 @@ let scrollToExperience = function() {
   }, 1000);
 };
 
+let scrollToContact = function() {
+  $('html, body').animate({
+      scrollTop: parseInt($("#contact").offset().top - 50)
+  }, 1000);
+};
 
 let hidePhoneNumber = function() {
   $("#phone-number-blackout").fadeTo(300,0);

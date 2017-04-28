@@ -552,6 +552,11 @@ body {
 
 #contact #contact-container #text-section #icon-box a {
   color:inherit;
+}
+
+#contact #contact-container #text-section #icon-box i {
+  list-style: none;
+  font-size: 1.5em;
   -webkit-transform: none;
   -ms-transform: none;
   text-shadow: 0px 0px 0px purple;
@@ -561,18 +566,13 @@ body {
   cursor: pointer;
 }
 
-#contact #contact-container #text-section #icon-box a:hover {
+#contact #contact-container #text-section #icon-box i:hover {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
   text-shadow: 0px 0px 15px purple;
   transition-property: transform --webkit-transform -ms-transform text-shadow;
   transition-duration: 0.1s;
-}
-
-#contact #contact-container #text-section #icon-box i {
-  list-style: none;
-  font-size: 1.5em;
 }
 
 #phone-number-blackout {
@@ -663,17 +663,30 @@ body {
 
 #footer #attribution {
   height:100%;
-  position:relative;
-  width:95%;
+  position:absolute;
+  width:280px;
+  right:10px;
   text-align: right;
 }
 
 #footer #attribution p {
   margin: 0 auto;
-  width:100%;
   position: absolute;
+  left:60px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+#footer #footer-logo {
+  position: absolute;
+  width:32px;
+  height:32px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left:10px;
+  background: url('../images/favicon1.png') no-repeat center;
 }
