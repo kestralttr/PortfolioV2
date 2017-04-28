@@ -498,6 +498,8 @@ body {
   border-radius: 25px;
   background-color: rgba(0,0,0,0.5);
   overflow: hidden;
+  max-width: 830px;
+  margin: 0 auto;
 }
 
 #contact #contact-container #picture-section {
@@ -521,7 +523,6 @@ body {
   height:auto;
   max-height:340px;
   max-width:265px;
-  /*background-size: contain;*/
 }
 
 #contact #contact-container #text-section {
@@ -531,7 +532,6 @@ body {
   bottom:20%;
   right:5%;
   padding: 5px;
-  /*background-color: green;*/
   overflow: hidden;
   text-align: center;
   color: #afafaf;
@@ -610,6 +610,44 @@ body {
   color: yellow;
   font-size: 2em;
   font-family: "Dosis", sans-serif;
+}
+
+@media (max-width:799px) {
+  #contact #contact-container {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width:620px) {
+  #contact #contact-container #text-section {
+    top:20%;
+    left:5%;
+    bottom:20%;
+    right:5%;
+    padding: 5px;
+    overflow: hidden;
+    text-align: center;
+    color: #afafaf;
+  }
+
+  #contact #contact-container #picture-section {
+    display: none;
+  }
+}
+
+@media (max-width:450px) {
+  #contact #contact-container {
+    top:210px;
+    left:10%;
+    right:10%;
+    bottom:150px;
+  }
+  #contact #contact-container #text-section {
+    top:13%;
+    left:5%;
+    bottom:10%;
+    right:5%;
+  }
 }
 
 #footer {
