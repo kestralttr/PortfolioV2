@@ -615,10 +615,15 @@ body {
 @media (max-width:799px) {
   #contact #contact-container {
     font-size: 0.8em;
+    left:10%;
+    right:10%;
   }
 }
 
 @media (max-width:620px) {
+  #contact #contact-container {
+    max-width:400px;
+  }
   #contact #contact-container #text-section {
     top:20%;
     left:5%;
