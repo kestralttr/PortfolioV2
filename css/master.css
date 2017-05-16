@@ -371,7 +371,7 @@ body {
   /*font-style: italic;*/
 }
 
-@media (max-width:799px) {
+@media (max-width:840px) {
   .project-item-left {
     height:auto;
   }
@@ -540,7 +540,7 @@ body {
   border-radius: 25px;
   background-color: rgba(0,0,0,0.5);
   overflow: hidden;
-  max-width: 830px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -551,6 +551,7 @@ body {
   bottom:5%;
   right:60%;
   overflow: hidden;
+  display: none;
 }
 
 #contact #contact-container #picture-section #picture {
@@ -570,7 +571,7 @@ body {
 #contact #contact-container #text-section {
   position: absolute;
   top:20%;
-  left:41%;
+  left:5%;
   bottom:20%;
   right:5%;
   padding: 5px;
@@ -656,15 +657,29 @@ body {
 
 @media (max-width:799px) {
   #contact #contact-container {
-    font-size: 0.8em;
+    font-size: 1em;
     left:10%;
     right:10%;
+  }
+  #contact #contact-container #text-section {
+    top:20%;
+    left:5%;
+    bottom:20%;
+    right:5%;
+    padding: 5px;
+    overflow: hidden;
+    text-align: center;
+    color: #afafaf;
+  }
+  #contact #contact-container #picture-section {
+    display: none;
   }
 }
 
 @media (max-width:620px) {
   #contact #contact-container {
     max-width:400px;
+    font-size:0.8em;
   }
   #contact #contact-container #text-section {
     top:20%;
