@@ -1,6 +1,9 @@
 
 (function($) {
 
+  history.replaceState('', 'Alex Bennett - Software Engineer', 'https://www.alex-bennett.com');
+
+
 let activateGlitch = function(element,pos,scale) {
   	let el = element;
     let x = Math.floor(Math.random() * pos);
