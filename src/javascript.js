@@ -1,7 +1,7 @@
 
 (function($) {
 
-  history.replaceState('', 'Alex Bennett - Software Engineer', 'https://www.alex-bennett.com');
+  // history.replaceState('', 'Alex Bennett - Software Engineer', 'https://www.alex-bennett.com');
 
 
 let activateGlitch = function(element,pos,scale) {
