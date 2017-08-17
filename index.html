@@ -19,10 +19,10 @@
       </div>
 
       <div id="nav-button-container">
-        <li class="nav-button" onClick="scrollToIntro()">Intro</li>
-        <li class="nav-button" onClick="scrollToProjects()">Projects</li>
-        <li class="nav-button" onClick="scrollToExperience()">Experience</li>
-        <li class="nav-button" onClick="scrollToContact()">Contact</li>
+        <li class="nav-button" id="intro-button">Intro</li>
+        <li class="nav-button" id="projects-button">Projects</li>
+        <li class="nav-button" id="experience-button">Experience</li>
+        <li class="nav-button" id="contact-button">Contact</li>
       </div>
     </section>
 
@@ -45,6 +45,26 @@
         <div class="skill-item" id="leafletjs">LeafletJS</div>
         <div class="skill-item" id="Sass">Sass</div>
       </div>
+
+      <div id="icon-box" class="intro-icon-box">
+        <a class="resume-button" href='pdf/alexbennett.pdf' download>
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          <div class="icon-description">Resume</div>
+        </a>
+        <a class="github-button" href='https://github.com/kestralttr/' target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <div class="icon-description">GitHub</div>
+        </a>
+        <a class="linkedin-button" href='https://www.linkedin.com/in/kestralttr/' target="_blank">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <div class="icon-description">LinkedIn</div>
+        </a>
+        <a class="mail-button" href='mailto:kestralttr@gmail.com'>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <div class="icon-description">Mail</div>
+        </a>
+      </div>
+
     </section>
 
     <section id="projects">
@@ -236,16 +256,31 @@
             If that's what you're into, let's chat.
           </p>
 
-          <div id="icon-box">
-            <a href='pdf/alexbennett.pdf' download><i class="fa fa-user-circle" aria-hidden="true"></i></a>
-            <a href='https://github.com/kestralttr/' target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href='https://www.linkedin.com/in/kestralttr/' target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            <a href='mailto:kestralttr@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-            <a onclick="showPhoneNumber()"><i id="mobile-icon" class="fa fa-mobile" aria-hidden="true"></i></a>
+          <div id="icon-box" class="contact-icon-box">
+            <a class="resume-button" href='pdf/alexbennett.pdf' download>
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <div class="icon-description">Resume</div>
+            </a>
+            <a class="github-button" href='https://github.com/kestralttr/' target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <div class="icon-description">GitHub</div>
+            </a>
+            <a class="linkedin-button" href='https://www.linkedin.com/in/kestralttr/' target="_blank">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <div class="icon-description">LinkedIn</div>
+            </a>
+            <a class="mail-button" href='mailto:kestralttr@gmail.com'>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <div class="icon-description">Mail</div>
+            </a>
+            <a class="phone-button">
+              <i id="mobile-icon" class="fa fa-mobile" aria-hidden="true"></i>
+              <div class="icon-description">Phone</div>
+            </a>
           </div>
         </div>
 
-        <div id="phone-number-blackout" onclick="hidePhoneNumber()">
+        <div id="phone-number-blackout">
           <div id="phone-number-background">
             <p class="text">
               Phone Number

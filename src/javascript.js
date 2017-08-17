@@ -1,7 +1,8 @@
 
+(function($) {
+
 let activateGlitch = function(element,pos,scale) {
   	let el = element;
-    // el.style.color = "red";
     let x = Math.floor(Math.random() * pos);
     x = x - (pos/2);
     let y = Math.floor(Math.random() * pos);
@@ -55,19 +56,19 @@ let scrollToIntro = function() {
 
 let scrollToProjects = function() {
   $('html, body').animate({
-      scrollTop: parseInt($("#projects").offset().top - 50)
+    scrollTop: parseInt($("#projects").offset().top - 50)
   }, 1000);
 };
 
 let scrollToExperience = function() {
   $('html, body').animate({
-      scrollTop: parseInt($("#experience").offset().top - 50)
+    scrollTop: parseInt($("#experience").offset().top - 50)
   }, 1000);
 };
 
 let scrollToContact = function() {
   $('html, body').animate({
-      scrollTop: parseInt($("#contact").offset().top - 50)
+    scrollTop: parseInt($("#contact").offset().top - 50)
   }, 1000);
 };
 
@@ -82,3 +83,29 @@ let showPhoneNumber = function() {
   $("#phone-number-blackout").css("display","block");
   $("#phone-number-blackout").fadeTo(300,1);
 };
+
+$("#intro-button").click(function() {
+  scrollToIntro();
+});
+
+$("#projects-button").click(function() {
+  scrollToProjects();
+});
+
+$("#experience-button").click(function() {
+  scrollToExperience();
+});
+
+$("#contact-button").click(function() {
+  scrollToContact();
+});
+
+$("#phone-number-blackout").click(function() {
+  hidePhoneNumber();
+});
+
+$("#mobile-icon").click(function() {
+  showPhoneNumber();
+});
+
+})(jQuery);
